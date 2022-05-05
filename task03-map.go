@@ -9,7 +9,7 @@ func sortMapValues(input map[int]string) (result []string) {
 	}
 	sort.Ints(sorted)
 	for _, v := range sorted {
-		result = append(result, v)
+		result = append(result, input[v])
 	}
 	return
 }
